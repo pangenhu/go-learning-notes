@@ -4,49 +4,95 @@
   <meta charset="UTF-8">
   <title>随机名言生成器</title>
   <style>
-    body {
-      max-width: 600px;
-      margin: 50px auto;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      padding: 0 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    #quoteBox {
-      padding: 30px;
-      background: #f8f9fa;
-      border-radius: 12px;
-      margin: 20px 0;
-      min-height: 100px;
+
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2c2c44);
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    button {
-      padding: 12px 24px;
-      font-size: 16px;
-      background: #007bff;
       color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+      padding: 20px;
     }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #f5f5f5;
+    }
+
+    #quoteBox {
+      min-height: 120px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #eee;
+      margin-bottom: 25px;
+      transition: all 0.3s ease;
+    }
+
+    #quoteBox:hover {
+      background: rgba(255, 255, 255, 0.09);
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 16px;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      color: #111;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
     button:hover {
-      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .author {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
+
 <body>
-  <h1>随机名言生成器</h1>
-  <div id="quoteBox">点击下方按钮获取一句名言</div>
-  <button onclick="getQuote()">点击获取名言</button>
+  <div class="container">
+    <h1>✨ 随机名言生成器 ✨</h1>
+    <div id="quoteBox">点击按钮，获取今日灵感</div>
+    <button onclick="getQuote()">换一句</button>
+  </div>
+
+  <div class="author">© 2025 算苗科技 出品</div>
 
   <script>
-    // 本地名言数组（无接口、无跨域、发给谁都能用）
     const quotes = [
-      "生活就像骑自行车，要保持平衡就得不断前进。 —— 爱因斯坦",
-      "成功的秘诀就是每天都比昨天的自己更优秀一点。",
+      "生活就像骑自行车，要保持平衡就得不断前进。—— 爱因斯坦",
+      "成功的秘诀就是每天比昨天的自己更优秀一点。",
       "你不需要很厉害才能开始，但你需要开始才能很厉害。",
       "不要等待机会，而要创造机会。",
       "人生没有白走的路，每一步都算数。",
@@ -54,14 +100,15 @@
       "你的坚持，终将美好。",
       "凡是值得做的事，就值得做好。",
       "自律给我自由。",
-      "未来属于那些相信梦想之美的人。"
+      "未来属于那些相信梦想之美的人。",
+      "编程改变世界，坚持成就梦想。—— 算苗科技",
+      "学习最好的时间是十年前，其次是现在。"
     ];
 
     function getQuote() {
-      const randomIndex = Math.floor(Math.random() * quotes.length);
-      document.getElementById("quoteBox").innerText = quotes[randomIndex];
+      const i = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quoteBox").innerText = quotes[i];
     }
   </script>
 </body>
 </html>
-
