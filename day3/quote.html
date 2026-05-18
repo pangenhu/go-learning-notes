@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>随机名言生成器</title>
+  <style>
+    body {
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 0 20px;
+    }
+    #quoteBox {
+      padding: 30px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      margin: 20px 0;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>随机名言生成器</h1>
+  <div id="quoteBox">点击下方按钮获取一句名言</div>
+  <button onclick="getQuote()">点击获取名言</button>
+
+  <script>
+    // 本地名言数组（无接口、无跨域、发给谁都能用）
+    const quotes = [
+      "生活就像骑自行车，要保持平衡就得不断前进。 —— 爱因斯坦",
+      "成功的秘诀就是每天都比昨天的自己更优秀一点。",
+      "你不需要很厉害才能开始，但你需要开始才能很厉害。",
+      "不要等待机会，而要创造机会。",
+      "人生没有白走的路，每一步都算数。",
+      "越努力，越幸运。",
+      "你的坚持，终将美好。",
+      "凡是值得做的事，就值得做好。",
+      "自律给我自由。",
+      "未来属于那些相信梦想之美的人。"
+    ];
+
+    function getQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quoteBox").innerText = quotes[randomIndex];
+    }
+  </script>
+</body>
+</html>
+
