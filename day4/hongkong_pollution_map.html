@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09899cc7ce9f8b0ed28ac2840d308aae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09899cc7ce9f8b0ed28ac2840d308aae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09899cc7ce9f8b0ed28ac2840d308aae = L.map(
+                "map_09899cc7ce9f8b0ed28ac2840d308aae",
+                {
+                    center: [22.3193, 114.1694],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4cfab2c6260c4026e13bc788ed5b9c0e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4cfab2c6260c4026e13bc788ed5b9c0e.addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var marker_7ee88ce8f4a11e79d89cbdf46fd8769e = L.marker(
+                [22.26114, 113.94608],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_a5f952e41049c2d2bbbfd002ae940be6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5b813873f1f6d8cd5dcb97a99430c02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c8da6bdcf83f977ba6c6924123b7028 = $(`<div id="html_2c8da6bdcf83f977ba6c6924123b7028" style="width: 100.0%; height: 100.0%;">Islands<br>Annual Average Temperature: 23.55</div>`)[0];
+                popup_f5b813873f1f6d8cd5dcb97a99430c02.setContent(html_2c8da6bdcf83f977ba6c6924123b7028);
+            
+        
+
+        marker_7ee88ce8f4a11e79d89cbdf46fd8769e.bindPopup(popup_f5b813873f1f6d8cd5dcb97a99430c02)
+        ;
+
+        
+    
+    
+                marker_7ee88ce8f4a11e79d89cbdf46fd8769e.setIcon(icon_a5f952e41049c2d2bbbfd002ae940be6);
+            
+    
+            var marker_225ab06376f4fb83c5d6b980e732c22b = L.marker(
+                [22.35488, 114.08401],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_856013ad16139e678b4376576574394f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2227a6e62e2bbb858ca755ac18aec7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8466a33e9e26ccd4c1ccc16ba434ab80 = $(`<div id="html_8466a33e9e26ccd4c1ccc16ba434ab80" style="width: 100.0%; height: 100.0%;">Kwai Tsing<br>Annual Average Temperature: 26.47</div>`)[0];
+                popup_e2227a6e62e2bbb858ca755ac18aec7d.setContent(html_8466a33e9e26ccd4c1ccc16ba434ab80);
+            
+        
+
+        marker_225ab06376f4fb83c5d6b980e732c22b.bindPopup(popup_e2227a6e62e2bbb858ca755ac18aec7d)
+        ;
+
+        
+    
+    
+                marker_225ab06376f4fb83c5d6b980e732c22b.setIcon(icon_856013ad16139e678b4376576574394f);
+            
+    
+            var marker_ab131619c64808da52b630da36ccd906 = L.marker(
+                [22.49471, 114.13812],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_c843142aaa2bac88d7c9ae47853a755c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bac7dbe6c1b79c1c98f7739082e75bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4c0ac7f840a43a45756df9f74216fb7 = $(`<div id="html_a4c0ac7f840a43a45756df9f74216fb7" style="width: 100.0%; height: 100.0%;">North<br>Annual Average Temperature: 27.13</div>`)[0];
+                popup_7bac7dbe6c1b79c1c98f7739082e75bf.setContent(html_a4c0ac7f840a43a45756df9f74216fb7);
+            
+        
+
+        marker_ab131619c64808da52b630da36ccd906.bindPopup(popup_7bac7dbe6c1b79c1c98f7739082e75bf)
+        ;
+
+        
+    
+    
+                marker_ab131619c64808da52b630da36ccd906.setIcon(icon_c843142aaa2bac88d7c9ae47853a755c);
+            
+    
+            var marker_7adc98127f0e6002eb8c240e0510e189 = L.marker(
+                [22.38143, 114.27052],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_1c0009ea6d52b2365e40a3b2d02d7800 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_629a0feaf0ac93aa0db4e1caee8ae48c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4d49089cff1432d80bb7faa08b7a091 = $(`<div id="html_e4d49089cff1432d80bb7faa08b7a091" style="width: 100.0%; height: 100.0%;">Sai Kung<br>Annual Average Temperature: 25.63</div>`)[0];
+                popup_629a0feaf0ac93aa0db4e1caee8ae48c.setContent(html_e4d49089cff1432d80bb7faa08b7a091);
+            
+        
+
+        marker_7adc98127f0e6002eb8c240e0510e189.bindPopup(popup_629a0feaf0ac93aa0db4e1caee8ae48c)
+        ;
+
+        
+    
+    
+                marker_7adc98127f0e6002eb8c240e0510e189.setIcon(icon_1c0009ea6d52b2365e40a3b2d02d7800);
+            
+    
+            var marker_a4d962c417d838473a759dcd076de5b5 = L.marker(
+                [22.38715, 114.19534],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_35869e893862663984b57c9d580c4501 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28b028b1098fc4610f66f43f139735c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8934a9977be5b81257fb5dd48ef2a5a8 = $(`<div id="html_8934a9977be5b81257fb5dd48ef2a5a8" style="width: 100.0%; height: 100.0%;">Sha Tin<br>Annual Average Temperature: 26.67</div>`)[0];
+                popup_28b028b1098fc4610f66f43f139735c0.setContent(html_8934a9977be5b81257fb5dd48ef2a5a8);
+            
+        
+
+        marker_a4d962c417d838473a759dcd076de5b5.bindPopup(popup_28b028b1098fc4610f66f43f139735c0)
+        ;
+
+        
+    
+    
+                marker_a4d962c417d838473a759dcd076de5b5.setIcon(icon_35869e893862663984b57c9d580c4501);
+            
+    
+            var marker_23778bcd32d47624acf7f49110acdb8c = L.marker(
+                [22.45085, 114.16422],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_8958e8c78738d02fbcbec613123caa22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ce4e58983aa8a794e6dbe3d904c0305 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66e3a07a9d622ee2999c213e195ebaa7 = $(`<div id="html_66e3a07a9d622ee2999c213e195ebaa7" style="width: 100.0%; height: 100.0%;">Tai Po<br>Annual Average Temperature: 27.18</div>`)[0];
+                popup_0ce4e58983aa8a794e6dbe3d904c0305.setContent(html_66e3a07a9d622ee2999c213e195ebaa7);
+            
+        
+
+        marker_23778bcd32d47624acf7f49110acdb8c.bindPopup(popup_0ce4e58983aa8a794e6dbe3d904c0305)
+        ;
+
+        
+    
+    
+                marker_23778bcd32d47624acf7f49110acdb8c.setIcon(icon_8958e8c78738d02fbcbec613123caa22);
+            
+    
+            var marker_86eae1000327cdfb4452bd750fcc7768 = L.marker(
+                [22.36281, 114.12907],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_25d69bcace0faa2be4fc5c4e34f5c7c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_606ffff93dd97621d3cc7c405900aa1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f342a8f6812e96bfd7e205d5c63ff804 = $(`<div id="html_f342a8f6812e96bfd7e205d5c63ff804" style="width: 100.0%; height: 100.0%;">Tsuen Wan<br>Annual Average Temperature: 26.1</div>`)[0];
+                popup_606ffff93dd97621d3cc7c405900aa1d.setContent(html_f342a8f6812e96bfd7e205d5c63ff804);
+            
+        
+
+        marker_86eae1000327cdfb4452bd750fcc7768.bindPopup(popup_606ffff93dd97621d3cc7c405900aa1d)
+        ;
+
+        
+    
+    
+                marker_86eae1000327cdfb4452bd750fcc7768.setIcon(icon_25d69bcace0faa2be4fc5c4e34f5c7c2);
+            
+    
+            var marker_eec00dd87f1ab995affabd9dbe08ab7d = L.marker(
+                [22.39163, 113.977089],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_bbbb1d56f647c5759e69ba4c46dbbf64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86c826ba8036fa7c9673a38126824fce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d84d6e90999684bb9d6485ea46e0708c = $(`<div id="html_d84d6e90999684bb9d6485ea46e0708c" style="width: 100.0%; height: 100.0%;">Tuen Mun<br>Annual Average Temperature: 26.06</div>`)[0];
+                popup_86c826ba8036fa7c9673a38126824fce.setContent(html_d84d6e90999684bb9d6485ea46e0708c);
+            
+        
+
+        marker_eec00dd87f1ab995affabd9dbe08ab7d.bindPopup(popup_86c826ba8036fa7c9673a38126824fce)
+        ;
+
+        
+    
+    
+                marker_eec00dd87f1ab995affabd9dbe08ab7d.setIcon(icon_bbbb1d56f647c5759e69ba4c46dbbf64);
+            
+    
+            var marker_84c16f7981446f4df43456860a3b2496 = L.marker(
+                [22.44559, 114.02218],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_972a39fee6144287b9e965d7d132bf10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d1ee6fad6ff9aa9f08235ca3c89adfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c8a33dbdbbca65e92b4331ed0904637 = $(`<div id="html_2c8a33dbdbbca65e92b4331ed0904637" style="width: 100.0%; height: 100.0%;">Yuen Long<br>Annual Average Temperature: 26.55</div>`)[0];
+                popup_2d1ee6fad6ff9aa9f08235ca3c89adfe.setContent(html_2c8a33dbdbbca65e92b4331ed0904637);
+            
+        
+
+        marker_84c16f7981446f4df43456860a3b2496.bindPopup(popup_2d1ee6fad6ff9aa9f08235ca3c89adfe)
+        ;
+
+        
+    
+    
+                marker_84c16f7981446f4df43456860a3b2496.setIcon(icon_972a39fee6144287b9e965d7d132bf10);
+            
+    
+            var marker_4c8cb4658338cb90b0c0624037cd94e6 = L.marker(
+                [22.3282, 114.19155],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_bfe6ae91d98d18b1130e48aacc69a13a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbb0c6d03a60014fbd761cd2b55f00f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8440db634e078a5c4c8e0bcd7c2ea500 = $(`<div id="html_8440db634e078a5c4c8e0bcd7c2ea500" style="width: 100.0%; height: 100.0%;">Kowloon City<br>Annual Average Temperature: 25.73</div>`)[0];
+                popup_dbb0c6d03a60014fbd761cd2b55f00f6.setContent(html_8440db634e078a5c4c8e0bcd7c2ea500);
+            
+        
+
+        marker_4c8cb4658338cb90b0c0624037cd94e6.bindPopup(popup_dbb0c6d03a60014fbd761cd2b55f00f6)
+        ;
+
+        
+    
+    
+                marker_4c8cb4658338cb90b0c0624037cd94e6.setIcon(icon_bfe6ae91d98d18b1130e48aacc69a13a);
+            
+    
+            var marker_873b6f354bb3fc7e893c00df6963eb0f = L.marker(
+                [22.31326, 114.22581],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_f5dbb0d685396a40b99f7b79771ae7b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3f13ae9a00f614af3aa83fb3e4aa667 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c51d9bbf7b2fa93dbdcff4ab0745119 = $(`<div id="html_4c51d9bbf7b2fa93dbdcff4ab0745119" style="width: 100.0%; height: 100.0%;">Kwun Tong<br>Annual Average Temperature: 25.73</div>`)[0];
+                popup_f3f13ae9a00f614af3aa83fb3e4aa667.setContent(html_4c51d9bbf7b2fa93dbdcff4ab0745119);
+            
+        
+
+        marker_873b6f354bb3fc7e893c00df6963eb0f.bindPopup(popup_f3f13ae9a00f614af3aa83fb3e4aa667)
+        ;
+
+        
+    
+    
+                marker_873b6f354bb3fc7e893c00df6963eb0f.setIcon(icon_f5dbb0d685396a40b99f7b79771ae7b3);
+            
+    
+            var marker_3db16a8b4fd74c05018893544b8858ed = L.marker(
+                [22.33074, 114.1622],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_de95e32e693b57e3c75a6aaa396e6733 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1200a1a2b2dcc2125757f76ce93bbeb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a615206dacb132676978620e8b9f23d = $(`<div id="html_9a615206dacb132676978620e8b9f23d" style="width: 100.0%; height: 100.0%;">Sham Shui Po<br>Annual Average Temperature: 25.73</div>`)[0];
+                popup_1200a1a2b2dcc2125757f76ce93bbeb1.setContent(html_9a615206dacb132676978620e8b9f23d);
+            
+        
+
+        marker_3db16a8b4fd74c05018893544b8858ed.bindPopup(popup_1200a1a2b2dcc2125757f76ce93bbeb1)
+        ;
+
+        
+    
+    
+                marker_3db16a8b4fd74c05018893544b8858ed.setIcon(icon_de95e32e693b57e3c75a6aaa396e6733);
+            
+    
+            var marker_4f05996cd51dc552775864b5401bd15e = L.marker(
+                [22.33353, 114.19686],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_ff11082f55aa610b9c9459bb0b99130c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d560f6d601ec9c5c6efb2e1cd2e6d61c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26be486a6367b568a2fabd5ad7ec972c = $(`<div id="html_26be486a6367b568a2fabd5ad7ec972c" style="width: 100.0%; height: 100.0%;">Wong Tai Sin<br>Annual Average Temperature: 25.73</div>`)[0];
+                popup_d560f6d601ec9c5c6efb2e1cd2e6d61c.setContent(html_26be486a6367b568a2fabd5ad7ec972c);
+            
+        
+
+        marker_4f05996cd51dc552775864b5401bd15e.bindPopup(popup_d560f6d601ec9c5c6efb2e1cd2e6d61c)
+        ;
+
+        
+    
+    
+                marker_4f05996cd51dc552775864b5401bd15e.setIcon(icon_ff11082f55aa610b9c9459bb0b99130c);
+            
+    
+            var marker_6b087a2f9c2ee20f5f15b3db27bef6db = L.marker(
+                [22.32138, 114.1726],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_e9351776d29bb292c6e95f78d03c6f23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_441dbae0e9cfb896ac44329c852cadc8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b66b4841300c0937c42c2ced8c0bb0c = $(`<div id="html_0b66b4841300c0937c42c2ced8c0bb0c" style="width: 100.0%; height: 100.0%;">Yau Tsim Mong<br>Annual Average Temperature: 25.73</div>`)[0];
+                popup_441dbae0e9cfb896ac44329c852cadc8.setContent(html_0b66b4841300c0937c42c2ced8c0bb0c);
+            
+        
+
+        marker_6b087a2f9c2ee20f5f15b3db27bef6db.bindPopup(popup_441dbae0e9cfb896ac44329c852cadc8)
+        ;
+
+        
+    
+    
+                marker_6b087a2f9c2ee20f5f15b3db27bef6db.setIcon(icon_e9351776d29bb292c6e95f78d03c6f23);
+            
+    
+            var marker_79ffc5e30a81f4dbeb26c8bb3a810773 = L.marker(
+                [22.28666, 114.15497],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_eb054a8032148ed397f176c475745efc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc88f638ffcbd4116e470605ad2cd812 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ed9cecb5a06a716df71f4f92833c144 = $(`<div id="html_4ed9cecb5a06a716df71f4f92833c144" style="width: 100.0%; height: 100.0%;">Central and Western<br>Annual Average Temperature: 26.31</div>`)[0];
+                popup_fc88f638ffcbd4116e470605ad2cd812.setContent(html_4ed9cecb5a06a716df71f4f92833c144);
+            
+        
+
+        marker_79ffc5e30a81f4dbeb26c8bb3a810773.bindPopup(popup_fc88f638ffcbd4116e470605ad2cd812)
+        ;
+
+        
+    
+    
+                marker_79ffc5e30a81f4dbeb26c8bb3a810773.setIcon(icon_eb054a8032148ed397f176c475745efc);
+            
+    
+            var marker_3637b2beb356ffc68703fa518eb9d7e7 = L.marker(
+                [22.28411, 114.22414],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_17352301afad5e17600615b4e47cf4d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b187d2a3e762e0b97ce514b177484d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd5b568a385c38326a900d4f857b7511 = $(`<div id="html_cd5b568a385c38326a900d4f857b7511" style="width: 100.0%; height: 100.0%;">Eastern<br>Annual Average Temperature: 25.73</div>`)[0];
+                popup_6b187d2a3e762e0b97ce514b177484d4.setContent(html_cd5b568a385c38326a900d4f857b7511);
+            
+        
+
+        marker_3637b2beb356ffc68703fa518eb9d7e7.bindPopup(popup_6b187d2a3e762e0b97ce514b177484d4)
+        ;
+
+        
+    
+    
+                marker_3637b2beb356ffc68703fa518eb9d7e7.setIcon(icon_17352301afad5e17600615b4e47cf4d3);
+            
+    
+            var marker_3c2f79310f33f1c9c3e6ec03e1e13df5 = L.marker(
+                [22.24725, 114.15884],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_50943f741f51cb4fda16a2e2766fa5b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d80c7747a37fa6f71ac6b03137474984 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efd2002b63f8cd9a7cacbb116472927c = $(`<div id="html_efd2002b63f8cd9a7cacbb116472927c" style="width: 100.0%; height: 100.0%;">Southern<br>Annual Average Temperature: 26.36</div>`)[0];
+                popup_d80c7747a37fa6f71ac6b03137474984.setContent(html_efd2002b63f8cd9a7cacbb116472927c);
+            
+        
+
+        marker_3c2f79310f33f1c9c3e6ec03e1e13df5.bindPopup(popup_d80c7747a37fa6f71ac6b03137474984)
+        ;
+
+        
+    
+    
+                marker_3c2f79310f33f1c9c3e6ec03e1e13df5.setIcon(icon_50943f741f51cb4fda16a2e2766fa5b5);
+            
+    
+            var marker_3a3f9a1612e4923760d8b94c3cec6fe5 = L.marker(
+                [22.27968, 114.17168],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_fda6b76beaf18fcf92bdf4c741ff2929 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bd4535b67699d11cf697148a3245a3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40f9b27cd14c7e336334f5e401276b8a = $(`<div id="html_40f9b27cd14c7e336334f5e401276b8a" style="width: 100.0%; height: 100.0%;">Wan Chai<br>Annual Average Temperature: 26.26</div>`)[0];
+                popup_0bd4535b67699d11cf697148a3245a3f.setContent(html_40f9b27cd14c7e336334f5e401276b8a);
+            
+        
+
+        marker_3a3f9a1612e4923760d8b94c3cec6fe5.bindPopup(popup_0bd4535b67699d11cf697148a3245a3f)
+        ;
+
+        
+    
+    
+                marker_3a3f9a1612e4923760d8b94c3cec6fe5.setIcon(icon_fda6b76beaf18fcf92bdf4c741ff2929);
+            
+    
+            var marker_de84c59eef73fe29ba9f29caf9451b59 = L.marker(
+                [22.284892, 114.144081],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_e18f92bf2be46c73607edf9ff73c733d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0351d3594a55400ba51b9bc5171b4cbd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a2c5ee3a35d28b6867708cafe1272e3 = $(`<div id="html_1a2c5ee3a35d28b6867708cafe1272e3" style="width: 100.0%; height: 100.0%;">Central/Western<br>Annual Average AQHI: 4.18</div>`)[0];
+                popup_0351d3594a55400ba51b9bc5171b4cbd.setContent(html_1a2c5ee3a35d28b6867708cafe1272e3);
+            
+        
+
+        marker_de84c59eef73fe29ba9f29caf9451b59.bindPopup(popup_0351d3594a55400ba51b9bc5171b4cbd)
+        ;
+
+        
+    
+    
+                marker_de84c59eef73fe29ba9f29caf9451b59.setIcon(icon_e18f92bf2be46c73607edf9ff73c733d);
+            
+    
+            var marker_6cba64ba92699d8c36c4d264dcd43554 = L.marker(
+                [22.24752, 114.15998],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_a853c497d25058de65d63f97bef5d06f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4acd5454082b482a7a7521f6938a79eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba60d7448dbb36281e55c73f6dc4d71a = $(`<div id="html_ba60d7448dbb36281e55c73f6dc4d71a" style="width: 100.0%; height: 100.0%;">Southern<br>Annual Average AQHI: 4.14</div>`)[0];
+                popup_4acd5454082b482a7a7521f6938a79eb.setContent(html_ba60d7448dbb36281e55c73f6dc4d71a);
+            
+        
+
+        marker_6cba64ba92699d8c36c4d264dcd43554.bindPopup(popup_4acd5454082b482a7a7521f6938a79eb)
+        ;
+
+        
+    
+    
+                marker_6cba64ba92699d8c36c4d264dcd43554.setIcon(icon_a853c497d25058de65d63f97bef5d06f);
+            
+    
+            var marker_22821da4d87d1902b729f40672d9a69b = L.marker(
+                [22.28295, 114.2194],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_6a9adb11905f36213756529996dad379 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92e4ce73f6314121e9cb5ebfb4a285b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44501399b4efb569b60974f9db9c6a95 = $(`<div id="html_44501399b4efb569b60974f9db9c6a95" style="width: 100.0%; height: 100.0%;">Eastern<br>Annual Average AQHI: 4.22</div>`)[0];
+                popup_92e4ce73f6314121e9cb5ebfb4a285b1.setContent(html_44501399b4efb569b60974f9db9c6a95);
+            
+        
+
+        marker_22821da4d87d1902b729f40672d9a69b.bindPopup(popup_92e4ce73f6314121e9cb5ebfb4a285b1)
+        ;
+
+        
+    
+    
+                marker_22821da4d87d1902b729f40672d9a69b.setIcon(icon_6a9adb11905f36213756529996dad379);
+            
+    
+            var marker_50c9dc6e9b2079f0b20f42a8eaa9680c = L.marker(
+                [22.30981, 114.23151],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_ffebc081acbaf2c80996fa65782b3b9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_082cbb5d42aa6129ffb8b94290a46d67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d130999988565e586dcc700148a6164 = $(`<div id="html_9d130999988565e586dcc700148a6164" style="width: 100.0%; height: 100.0%;">Kwun Tong<br>Annual Average AQHI: 4.12</div>`)[0];
+                popup_082cbb5d42aa6129ffb8b94290a46d67.setContent(html_9d130999988565e586dcc700148a6164);
+            
+        
+
+        marker_50c9dc6e9b2079f0b20f42a8eaa9680c.bindPopup(popup_082cbb5d42aa6129ffb8b94290a46d67)
+        ;
+
+        
+    
+    
+                marker_50c9dc6e9b2079f0b20f42a8eaa9680c.setIcon(icon_ffebc081acbaf2c80996fa65782b3b9f);
+            
+    
+            var marker_8f5695be9f07b3319af454a0874f6660 = L.marker(
+                [22.33041, 114.15911],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_1f4d7980bd368ecfd376e0da391db398 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cec15ca2c998be7619dedfe1f431ff2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32ebb2cc3ac076b2f6a3a577056a39af = $(`<div id="html_32ebb2cc3ac076b2f6a3a577056a39af" style="width: 100.0%; height: 100.0%;">Sham Shui Po<br>Annual Average AQHI: 4.13</div>`)[0];
+                popup_5cec15ca2c998be7619dedfe1f431ff2.setContent(html_32ebb2cc3ac076b2f6a3a577056a39af);
+            
+        
+
+        marker_8f5695be9f07b3319af454a0874f6660.bindPopup(popup_5cec15ca2c998be7619dedfe1f431ff2)
+        ;
+
+        
+    
+    
+                marker_8f5695be9f07b3319af454a0874f6660.setIcon(icon_1f4d7980bd368ecfd376e0da391db398);
+            
+    
+            var marker_2c63011a0b8dc37623a561f9a09bde32 = L.marker(
+                [22.35695, 114.12938],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_1c7d2c6ba2b9067fa08df3932b0c0788 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5edf234cd17ce8559aabb500d602b022 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e89664905c3f352887d04ce64f720f5e = $(`<div id="html_e89664905c3f352887d04ce64f720f5e" style="width: 100.0%; height: 100.0%;">Kwai Chung<br>Annual Average AQHI: 4.19</div>`)[0];
+                popup_5edf234cd17ce8559aabb500d602b022.setContent(html_e89664905c3f352887d04ce64f720f5e);
+            
+        
+
+        marker_2c63011a0b8dc37623a561f9a09bde32.bindPopup(popup_5edf234cd17ce8559aabb500d602b022)
+        ;
+
+        
+    
+    
+                marker_2c63011a0b8dc37623a561f9a09bde32.setIcon(icon_1c7d2c6ba2b9067fa08df3932b0c0788);
+            
+    
+            var marker_bafbe3d56fc14aa2bdec64ab7e9bcfaf = L.marker(
+                [22.37163, 114.11456],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_bd8c64f57b3565942c036de1a4cdf6d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73b8d05f3b91f08a81728f68e907263a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2845fc43596799825ee0246f0df00ce2 = $(`<div id="html_2845fc43596799825ee0246f0df00ce2" style="width: 100.0%; height: 100.0%;">Tsuen Wan<br>Annual Average AQHI: 4.08</div>`)[0];
+                popup_73b8d05f3b91f08a81728f68e907263a.setContent(html_2845fc43596799825ee0246f0df00ce2);
+            
+        
+
+        marker_bafbe3d56fc14aa2bdec64ab7e9bcfaf.bindPopup(popup_73b8d05f3b91f08a81728f68e907263a)
+        ;
+
+        
+    
+    
+                marker_bafbe3d56fc14aa2bdec64ab7e9bcfaf.setIcon(icon_bd8c64f57b3565942c036de1a4cdf6d4);
+            
+    
+            var marker_8ce2a0f4d563bf2efe3d0076c6c8d22a = L.marker(
+                [22.31786, 114.2601],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_6199e0ca4fa757555ae5f3fced8e2beb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2900cfee360697aee453ce549beaa0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbf125eb8381ebae8aff89d4c7a4b9a9 = $(`<div id="html_cbf125eb8381ebae8aff89d4c7a4b9a9" style="width: 100.0%; height: 100.0%;">Tseung Kwan O<br>Annual Average AQHI: 4.24</div>`)[0];
+                popup_a2900cfee360697aee453ce549beaa0d.setContent(html_cbf125eb8381ebae8aff89d4c7a4b9a9);
+            
+        
+
+        marker_8ce2a0f4d563bf2efe3d0076c6c8d22a.bindPopup(popup_a2900cfee360697aee453ce549beaa0d)
+        ;
+
+        
+    
+    
+                marker_8ce2a0f4d563bf2efe3d0076c6c8d22a.setIcon(icon_6199e0ca4fa757555ae5f3fced8e2beb);
+            
+    
+            var marker_4754ff8f527b56d863c9a21140a4bd75 = L.marker(
+                [22.44506, 114.02279],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_b5572187ac322cbc0d4e0acdcab6dd4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e5d0ffcd6dd52f3c375433f93b1c40c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29014d70511a8f22a616fc36c3450478 = $(`<div id="html_29014d70511a8f22a616fc36c3450478" style="width: 100.0%; height: 100.0%;">Yuen Long<br>Annual Average AQHI: 4.22</div>`)[0];
+                popup_8e5d0ffcd6dd52f3c375433f93b1c40c.setContent(html_29014d70511a8f22a616fc36c3450478);
+            
+        
+
+        marker_4754ff8f527b56d863c9a21140a4bd75.bindPopup(popup_8e5d0ffcd6dd52f3c375433f93b1c40c)
+        ;
+
+        
+    
+    
+                marker_4754ff8f527b56d863c9a21140a4bd75.setIcon(icon_b5572187ac322cbc0d4e0acdcab6dd4b);
+            
+    
+            var marker_39d6f3bdad6014f07607c9ea5938edad = L.marker(
+                [22.39112, 113.97679],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_c9e76fb156c403a1b71680763770d92d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3fededb1b9eb40b264e656ed4a23be2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9912bd9d018112e3d955e33881892acc = $(`<div id="html_9912bd9d018112e3d955e33881892acc" style="width: 100.0%; height: 100.0%;">Tuen Mun<br>Annual Average AQHI: 4.49</div>`)[0];
+                popup_f3fededb1b9eb40b264e656ed4a23be2.setContent(html_9912bd9d018112e3d955e33881892acc);
+            
+        
+
+        marker_39d6f3bdad6014f07607c9ea5938edad.bindPopup(popup_f3fededb1b9eb40b264e656ed4a23be2)
+        ;
+
+        
+    
+    
+                marker_39d6f3bdad6014f07607c9ea5938edad.setIcon(icon_c9e76fb156c403a1b71680763770d92d);
+            
+    
+            var marker_50f92fb8d9e3a81289c76efd11607ed5 = L.marker(
+                [22.28887, 113.94355],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_477c2d66077e5c5dba8eeafb6f8205c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3bebe1c96a60e56a1c10d50b7d0d64d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_360c5f5b41a7f484819e1c78f4cf120c = $(`<div id="html_360c5f5b41a7f484819e1c78f4cf120c" style="width: 100.0%; height: 100.0%;">Tung Chung<br>Annual Average AQHI: 4.38</div>`)[0];
+                popup_c3bebe1c96a60e56a1c10d50b7d0d64d.setContent(html_360c5f5b41a7f484819e1c78f4cf120c);
+            
+        
+
+        marker_50f92fb8d9e3a81289c76efd11607ed5.bindPopup(popup_c3bebe1c96a60e56a1c10d50b7d0d64d)
+        ;
+
+        
+    
+    
+                marker_50f92fb8d9e3a81289c76efd11607ed5.setIcon(icon_477c2d66077e5c5dba8eeafb6f8205c3);
+            
+    
+            var marker_3a0a1969d8a55454e53f2fdbf48fae82 = L.marker(
+                [22.4511, 114.16426],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_833289e517771998d2b780ae26d7fc3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_183aa82672ab5b403f04b3f0c407a8d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24dff0461981a23790faf63e0c38ac01 = $(`<div id="html_24dff0461981a23790faf63e0c38ac01" style="width: 100.0%; height: 100.0%;">Tai Po<br>Annual Average AQHI: 4.18</div>`)[0];
+                popup_183aa82672ab5b403f04b3f0c407a8d7.setContent(html_24dff0461981a23790faf63e0c38ac01);
+            
+        
+
+        marker_3a0a1969d8a55454e53f2fdbf48fae82.bindPopup(popup_183aa82672ab5b403f04b3f0c407a8d7)
+        ;
+
+        
+    
+    
+                marker_3a0a1969d8a55454e53f2fdbf48fae82.setIcon(icon_833289e517771998d2b780ae26d7fc3d);
+            
+    
+            var marker_aab5259235cb371111a1a50ec1eb2315 = L.marker(
+                [22.37642, 114.18459],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_fb76921a351422037b6b433e73641eb8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7cefe31dc4385f7f7fcd10f15337f00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06e5f9878cdab6a1625c778d30c51564 = $(`<div id="html_06e5f9878cdab6a1625c778d30c51564" style="width: 100.0%; height: 100.0%;">Sha Tin<br>Annual Average AQHI: 4.15</div>`)[0];
+                popup_a7cefe31dc4385f7f7fcd10f15337f00.setContent(html_06e5f9878cdab6a1625c778d30c51564);
+            
+        
+
+        marker_aab5259235cb371111a1a50ec1eb2315.bindPopup(popup_a7cefe31dc4385f7f7fcd10f15337f00)
+        ;
+
+        
+    
+    
+                marker_aab5259235cb371111a1a50ec1eb2315.setIcon(icon_fb76921a351422037b6b433e73641eb8);
+            
+    
+            var marker_c1d73fce6915e03b0a18a867bebada6c = L.marker(
+                [22.49695, 114.12844],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_12b1f10306caef592fd12dc3fd5faefb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_434564769e26171e96142c2dbd12caa7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_312a7b94881d841aa668e481b8b3ba24 = $(`<div id="html_312a7b94881d841aa668e481b8b3ba24" style="width: 100.0%; height: 100.0%;">North<br>Annual Average AQHI: 4.2</div>`)[0];
+                popup_434564769e26171e96142c2dbd12caa7.setContent(html_312a7b94881d841aa668e481b8b3ba24);
+            
+        
+
+        marker_c1d73fce6915e03b0a18a867bebada6c.bindPopup(popup_434564769e26171e96142c2dbd12caa7)
+        ;
+
+        
+    
+    
+                marker_c1d73fce6915e03b0a18a867bebada6c.setIcon(icon_12b1f10306caef592fd12dc3fd5faefb);
+            
+    
+            var marker_455348cc74333210447f07bf2b37429e = L.marker(
+                [22.47129, 114.36072],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_8c1f18f9bbd3132e5845f59b3886b2b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_019801ba73341890c923c82b5cbe42fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3276470c37b6e700252323cc4a479cf3 = $(`<div id="html_3276470c37b6e700252323cc4a479cf3" style="width: 100.0%; height: 100.0%;">Tap Mun<br>Annual Average AQHI: 4.17</div>`)[0];
+                popup_019801ba73341890c923c82b5cbe42fe.setContent(html_3276470c37b6e700252323cc4a479cf3);
+            
+        
+
+        marker_455348cc74333210447f07bf2b37429e.bindPopup(popup_019801ba73341890c923c82b5cbe42fe)
+        ;
+
+        
+    
+    
+                marker_455348cc74333210447f07bf2b37429e.setIcon(icon_8c1f18f9bbd3132e5845f59b3886b2b1);
+            
+    
+            var marker_0b0f0a3144b315b9ed84fcf55399ec36 = L.marker(
+                [22.28014, 114.18508],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_2876843a95e6e816cea1fad964825a39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81e58e446b7bd38dc3d97c549a664412 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_223cf1a656dfbeeb08e8cd04309f9b8f = $(`<div id="html_223cf1a656dfbeeb08e8cd04309f9b8f" style="width: 100.0%; height: 100.0%;">Causeway Bay<br>Annual Average AQHI: 4.42</div>`)[0];
+                popup_81e58e446b7bd38dc3d97c549a664412.setContent(html_223cf1a656dfbeeb08e8cd04309f9b8f);
+            
+        
+
+        marker_0b0f0a3144b315b9ed84fcf55399ec36.bindPopup(popup_81e58e446b7bd38dc3d97c549a664412)
+        ;
+
+        
+    
+    
+                marker_0b0f0a3144b315b9ed84fcf55399ec36.setIcon(icon_2876843a95e6e816cea1fad964825a39);
+            
+    
+            var marker_ab5114af9b52422b56f53af5f26be0f8 = L.marker(
+                [22.2818, 114.15812],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_10716f33bd7071825f0014a10c63cb13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ed70ea05bcc6fa7150c9e6fc7388e5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df1858cf64e3dac08dad2588b51b90ff = $(`<div id="html_df1858cf64e3dac08dad2588b51b90ff" style="width: 100.0%; height: 100.0%;">Central<br>Annual Average AQHI: 4.22</div>`)[0];
+                popup_2ed70ea05bcc6fa7150c9e6fc7388e5f.setContent(html_df1858cf64e3dac08dad2588b51b90ff);
+            
+        
+
+        marker_ab5114af9b52422b56f53af5f26be0f8.bindPopup(popup_2ed70ea05bcc6fa7150c9e6fc7388e5f)
+        ;
+
+        
+    
+    
+                marker_ab5114af9b52422b56f53af5f26be0f8.setIcon(icon_10716f33bd7071825f0014a10c63cb13);
+            
+    
+            var marker_dc5fd81a3e960e87a12b2e46bfb89e57 = L.marker(
+                [22.32261, 114.16826],
+                {
+}
+            ).addTo(map_09899cc7ce9f8b0ed28ac2840d308aae);
+        
+    
+            var icon_e5d70231e8a8ccebecbbec64797b3675 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_992ad995c82ece185fcf8d629ac55772 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb39fa6ffb54af9df00824585e14173c = $(`<div id="html_eb39fa6ffb54af9df00824585e14173c" style="width: 100.0%; height: 100.0%;">Mong Kok<br>Annual Average AQHI: 4.24</div>`)[0];
+                popup_992ad995c82ece185fcf8d629ac55772.setContent(html_eb39fa6ffb54af9df00824585e14173c);
+            
+        
+
+        marker_dc5fd81a3e960e87a12b2e46bfb89e57.bindPopup(popup_992ad995c82ece185fcf8d629ac55772)
+        ;
+
+        
+    
+    
+                marker_dc5fd81a3e960e87a12b2e46bfb89e57.setIcon(icon_e5d70231e8a8ccebecbbec64797b3675);
+            
+</script>
+</html>

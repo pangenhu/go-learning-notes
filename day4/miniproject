@@ -1,0 +1,119 @@
+import pandas as pd
+import requests
+import folium
+import re
+import os
+
+# ==========================================
+# 第一部分：获取并计算“每日最高气温”年平均值
+# ==========================================
+print("正在读取行政区数据并请求气温 API...")
+
+# 读取18区位置数据
+district_df = pd.read_csv('district.csv')
+district_avg_temps = {}
+
+# 遍历每个区请求 Open-Meteo API
+for index, row in district_df.iterrows():
+    # ！！！这里已经根据你的实际数据修改为小写的 name, latitude, longitude ！！！
+    district_name = row['name']
+    lat = row['latitude']
+    lon = row['longitude']
+    
+    url = f"https://archive-api.open-meteo.com/v1/archive?latitude={lat}&longitude={lon}&start_date=2024-01-01&end_date=2024-12-31&daily=temperature_2m_max"
+    
+    try:
+        response = requests.get(url)
+        data = response.json()
+        daily_max_temps = data.get('daily', {}).get('temperature_2m_max', [])
+        valid_temps = [t for t in daily_max_temps if t is not None]
+        
+        if valid_temps:
+            avg_temp = sum(valid_temps) / len(valid_temps)
+            district_avg_temps[district_name] = round(avg_temp, 2) # 保留两位小数
+        else:
+            district_avg_temps[district_name] = 0.0
+            
+    except Exception as e:
+        print(f"获取 {district_name} 气温数据时出错: {e}")
+
+# ==========================================
+# 第二部分：读取、清洗并计算“每日最高AQHI”年平均值
+# ==========================================
+print("正在处理 12 个月的 AQHI 数据...")
+
+aqhi_files = [f"2024{str(month).zfill(2)}_Eng.csv" for month in range(1, 13)]
+station_columns = [
+    "Central/Western", "Southern", "Eastern", "Kwun Tong", "Sham Shui Po", 
+    "Kwai Chung", "Tsuen Wan", "Tseung Kwan O", "Yuen Long", "Tuen Mun", 
+    "Tung Chung", "Tai Po", "Sha Tin", "North", "Tap Mun", "Causeway Bay", 
+    "Central", "Mong Kok"
+]
+
+all_daily_max_aqhi = pd.DataFrame()
+
+# 整合12个月数据
+for file in aqhi_files:
+    if os.path.exists(file):
+        df = pd.read_csv(file)
+        # 提取 Hour 为 'Daily Max' 的行
+        daily_max_rows = df[df['Hour'] == 'Daily Max'].copy()
+        
+        # 数据清洗：移除特殊符号并填充空值
+        for col in station_columns:
+            if col in daily_max_rows.columns:
+                daily_max_rows[col] = daily_max_rows[col].astype(str).str.replace(r'[+*]', '', regex=True)
+                daily_max_rows[col] = pd.to_numeric(daily_max_rows[col], errors='coerce').fillna(0)
+                
+        all_daily_max_aqhi = pd.concat([all_daily_max_aqhi, daily_max_rows], ignore_index=True)
+
+# 计算各站平均值
+station_avg_aqhi = {}
+for col in station_columns:
+    if col in all_daily_max_aqhi.columns:
+        station_avg_aqhi[col] = round(all_daily_max_aqhi[col].mean(), 2)
+
+# ==========================================
+# 第三部分：使用 Folium 绘制交互式地图
+# ==========================================
+print("正在生成地图并保存...")
+
+hk_map = folium.Map(location=[22.3193, 114.1694], zoom_start=11)
+
+# 1. 绘制 18 个区气温蓝色标记
+for index, row in district_df.iterrows():
+    district_name = row['name']
+    lat = row['latitude']
+    lon = row['longitude']
+    
+    if district_name in district_avg_temps:
+        avg_t = district_avg_temps[district_name]
+        popup_text = f"{district_name}<br>Annual Average Temperature: {avg_t}"
+        folium.Marker(
+            location=[lat, lon],
+            popup=folium.Popup(popup_text, max_width=300),
+            icon=folium.Icon(color='blue')
+        ).add_to(hk_map)
+
+# 2. 绘制 18 个监测站 AQHI 红色标记
+station_df = pd.read_csv('station.csv')
+for index, row in station_df.iterrows():
+    # ！！！这里同样修改为小写的 name, latitude, longitude ！！！
+    station_name = row['name']
+    lat = row['latitude']
+    lon = row['longitude']
+    
+    if station_name in station_avg_aqhi:
+        avg_a = station_avg_aqhi[station_name]
+        popup_text = f"{station_name}<br>Annual Average AQHI: {avg_a}"
+        folium.Marker(
+            location=[lat, lon],
+            popup=folium.Popup(popup_text, max_width=300),
+            icon=folium.Icon(color='red')
+        ).add_to(hk_map)
+
+# 因为你在 VS Code 终端跑纯 Python 脚本，我们把地图保存为 HTML 文件
+map_filename = "hongkong_pollution_map.html"
+hk_map.save(map_filename)
+print(f"处理完成！地图已保存为 {map_filename}。")
+print(f"请在 VS Code 中双击打开 {map_filename}，或者在浏览器中打开它即可查看地图。")
